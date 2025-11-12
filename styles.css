@@ -362,6 +362,23 @@ body {
     margin-bottom: 1rem;
 }
 
+.card-icon .material-symbols-outlined {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    display: inline-block;
+    background: linear-gradient(135deg, var(--bg-purple-light), var(--bg-light));
+    padding: 1rem;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-icon .material-symbols-outlined {
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    box-shadow: 0 8px 16px rgba(124, 58, 237, 0.3);
+}
+
 .card h4 {
     font-size: 1.25rem;
     font-weight: 600;
@@ -599,6 +616,14 @@ body {
     font-weight: 600;
     margin-bottom: 1rem;
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-info-box h4 .material-symbols-outlined {
+    font-size: 1.75rem;
+    vertical-align: middle;
 }
 
 .cta-info-box p {
